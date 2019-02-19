@@ -1,0 +1,45 @@
+[user]
+	name = Ryan O'Hara
+	email = ryan.a.ohara@gmail.com
+
+[core]
+	editor = nano
+	# Use custom `.gitignore`
+	excludesfile = ~/.gitignore_ignore
+
+[color]
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
+
+[diff]
+	tool = vscode
+
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+
+[help]
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[branch]
+	autosetuprebase = always
+
+[fetch]
+	prune = true
+
+[pull]
+	rebase = true
+
+[push]
+	# https://git-scm.com/docs/git-config#git-config-pushdefault
+	default = simple
+	# Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
+
+[credential]
+	helper = osxkeychain
+	useHttpPath = true
+
+[alias]
+	unstage = reset HEAD --
