@@ -1,0 +1,68 @@
+# Taps
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "caskroom/cask"
+
+# Pre-reqs
+brew "openldap"
+brew "libiconv"
+
+# Binaries
+brew "autoconf"
+brew "composer"
+brew "curl"
+brew "dnsmasq", restart_service: true
+brew "git"
+brew "httpd"
+brew "imagemagick"
+brew "mariadb", restart_service: true
+brew "mcrypt"
+brew "nginx", restart_service: true
+brew "node"
+brew "php@7.1", restart_service: true
+brew "php@7.3", restart_service: true
+brew "wget"
+brew "yarn"
+
+# Apps
+cask "1password"
+cask "adobe-creative-cloud"
+cask "android-studio"
+cask "bartender"
+cask "boom-3d"
+cask "caprine"
+cask "cyberduck"
+cask "daisydisk"
+cask "disk-drill"
+cask "dropbox"
+cask "fantastical"
+cask "firefox"
+cask "fontexplorer-x-pro"
+cask "fork"
+cask "google-chrome"
+cask "google-drive-file-stream"
+cask "gpg-suite"
+cask "imagealpha"
+cask "imageoptim"
+cask "iterm2"
+cask "namechanger"
+cask "ngrok"
+cask "noun-project"
+cask "postgres"
+cask "postico"
+cask "postman"
+cask "private-internet-access"
+cask "rescuetime"
+cask "rocket"
+cask "sequel-pro"
+cask "sketch"
+cask "slack"
+cask "spark"
+cask "spotify"
+cask "spectacle"
+cask "the-unarchiver"
+cask "torbrowser"
+cask "virtualbox"
+cask "vlc"
+cask "zoomus"
